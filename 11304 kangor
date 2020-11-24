@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+	int left;
+	int current;
+	int right;
+	
+	while (scanf_s("%d%d%d", &left, &current, &right)!=EOF) {
+	
+		
+	
+	
+	if (left == right)
+		break;
+	if (current == right)
+		break;
+	if (left == current)
+		break;
+	if (left == right == current)
+		break;
+	int l_differ = current - (left + 1);
+	int r_differ = right - (current + 1);
+	if (l_differ > r_differ) {
+		printf("%d\n", l_differ);
+	}
+	else if (l_differ < r_differ) {
+		printf("%d\n", r_differ);
+	}
+	else {
+		printf("%d\n", r_differ);
+
+	}
+}
+}
